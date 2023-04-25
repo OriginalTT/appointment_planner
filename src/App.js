@@ -31,7 +31,7 @@ function App() {
     <Route path="/" element={<Root />}>
       <Route index element={<Navigate to={ROUTES.CONTACTS} replace />} />
       <Route path={ROUTES.CONTACTS} element={<ContactsPage contacts={contacts} addContact={addContact} />} />
-      <Route path={ROUTES.APPOINTMENTS} element={<AppointmentsPage appointments={appointments} addAppointment={addAppointment} />} />
+      <Route path={ROUTES.APPOINTMENTS} element={<AppointmentsPage appointments={appointments} contacts={contacts} addAppointment={addAppointment} />} />
     </Route>
   ));
 

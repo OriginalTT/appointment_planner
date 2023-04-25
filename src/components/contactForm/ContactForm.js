@@ -25,11 +25,11 @@ export const ContactForm = ({
     <>
       <form onSubmit={handleSubmit}>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value={name} onChange={handleNameChange} /><br />
+        <input type="text" id="name" name="name" value={name} onChange={handleNameChange} />
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" value={phone} onChange={handlePhoneChange} pattern="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$" /><br />
+        <input type="tel" id="phone" name="phone" value={phone} onChange={handlePhoneChange} pattern="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$" />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value={email} onChange={handleEmailChange} /><br />
+        <input type="email" id="email" name="email" value={email} onChange={handleEmailChange} />
         <input type="submit" value="Submit" />
       </form>
     </>

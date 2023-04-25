@@ -15,6 +15,9 @@ export const ContactsPage = (props) => {
       return null;
     };
     props.addContact(name, phone, email);
+    setName('');
+    setPhone('');
+    setEmail('');
   };
 
   useEffect(() => {
